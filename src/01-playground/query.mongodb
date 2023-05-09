@@ -1,2 +1,72 @@
+/* consulta1
+use("sample_training");
+db.zips.find({zip:"10010"});
+*/
+/* consulta2 
+use("sample_restaurants")
+db.restaurants.find({borough:"Queens"});
+*/
+
+/* consulta 3
+use("sample_restaurants")
+db.restaurants.find({cuisine:"American"}) */
+
+/* consulta 4
+use("sample_geospatial")
+db.shipwrecks.find({watlev:"always dry"}) */
+
+/* consulta 5
+use("sample_analytics")
+db.customers.find({email:"michaelespinoza@gmail.com"})*/
+/*
+db.zips.insertMany ([
+    {
+        "city": "Bogota",
+        "zip": "110110",
+        "loc": {
+        "y": 47.737400,
+        "x": 79.981146
+        },
+        "pop": 75987,
+        "state": "COL"
+
+    },
+    {
+        "city": "Tunja",
+        "zip": "654789",
+        "loc": {
+        "y": 47.7374,
+        "x": 29.981146
+        },
+        "pop": 98487,
+        "state": "COL"
+
+    },
+    {
+        "city": "Paris",
+        "zip": "110110",
+        "loc": {
+        "y": 82.737400,
+        "x": 96.981146
+        },
+        "pop": 75987,
+        "state": "FRA"
+
+    },
+        {
+        "city": "Rio de janeiro",
+        "zip": "655321",
+        "loc": {
+        "y": 60.737400,
+        "x": 96.981146
+        },
+        "pop": 75987,
+        "state": "BRA"
+
+    }
+])
+*/
+/* para borrar 
 use("sample_training")
-db.zips.find({state:"NY"})
+db.zips.deleteOne({pop:2270})
+*/
